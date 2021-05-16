@@ -8,3 +8,10 @@ function fictional_unifiles(){
 }
 
 add_action('wp_enqueue_scripts','fictional_unifiles');
+
+
+function ficuni_after_suptheme_info(){
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme','ficuni_after_suptheme_info');
