@@ -11,6 +11,9 @@ add_action('wp_enqueue_scripts','fictional_unifiles');
 
 
 function ficuni_after_suptheme_info(){
+    register_nav_menu('FanUniMenuMain','Header Menu Location');
+    register_nav_menu('FooterNavMenu','Footer Nav Menu One');
+    register_nav_menu('FooterNavMenuTwo','Footer Nav Menu Two');
     add_theme_support('title-tag');
 }
 
