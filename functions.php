@@ -24,6 +24,7 @@ add_action('after_setup_theme','ficuni_after_suptheme_info');
 function funiversity_eventposttype(){
 
     register_post_type('event', array(
+        'supports' => array('title', 'editor', 'excerpt'),
         'rewrite' => array('slug' => 'events'),
         'has_archive' => true,
         'public' => true,
